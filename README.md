@@ -17,7 +17,8 @@
 > - Activate virtual environment for window
 > `venv\scripts\activate`
 
-> Execute tests `python -m pytest --html=report.html`
+> Execute all tests `python -m pytest --html=report.html`
+> Execute with marker `python -m pytest -m sanity  --html=report.html`
 
 *View test report*
 >Open `report.html` file to see test run details
