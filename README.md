@@ -18,6 +18,7 @@
 > `venv\scripts\activate`
 
 > Execute all tests `python -m pytest --html=report.html`
+
 > Execute with marker `python -m pytest -m sanity  --html=report.html`
 
 *View test report*
