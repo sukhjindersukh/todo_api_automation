@@ -1,0 +1,8 @@
+- Development environment
+    1. Python version: 3.7.3
+    2. IDE: PyCharm version: 2018.3.7
+
+- Python external libraries
+    1. pytest version: 5.0.1
+    2. pytest-html verion: 1.21.1
+    2. requests 2.22.0
