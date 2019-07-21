@@ -17,7 +17,8 @@
 > `venv\scripts\activate`
 
 > Execute tests `python -m pytest -v  tests/ --html=report.html`
-> Execute tests with log enabled `python -m pytest -v  --log-file=test.log  tests/ --html=report.html`
+
+> Execute tests with log enabled ```python -m pytest -v  --log-file=test.log  tests/ --html=report.html```
 
 #### View test report
 >Open `report.html` file to see test run details
