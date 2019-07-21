@@ -28,9 +28,7 @@ class Rest_Util:
         """
 
         uri = _url('/tasks')
-        print('Get all todo tasks: ' + uri)
         return requests.get(uri)
-
 
     def get_task(self, task_id):
         """
@@ -43,29 +41,24 @@ class Rest_Util:
                     Response: This function will return rest response
                 """
         uri = _url('/tasks/{0}').format(task_id)
-        print('Get single todo tasks: ' + uri)
         return requests.get(uri)
 
-
-    def add_task(self, summary):
+    def add_task(self, summary, completed):
         """
                         The function to add new task in apps's rest server.
 
                         Parameters:
                             summary
+                            completed
 
                         Returns:
                             Response: This function will return rest response
                         """
         uri = _url('/tasks')
-        print('Add new tasks with summary: ' + summary)
-
         return requests.post(uri, json={
             'task': summary,
-            'completed': False
+            'completed': completed
         })
-
-
 
     def update_task(self, task_id, summary):
         """
@@ -79,8 +72,6 @@ class Rest_Util:
                                     Response: This function will return rest response
                                 """
         uri = _url('/tasks/{0}'.format(task_id))
-        print('Update tasks with summary: ' + summary)
-
         return requests.put(uri, json={
             'task': summary,
             'completed': False
@@ -98,7 +89,6 @@ class Rest_Util:
                                 """
 
         uri = _url('/tasks/{0}'.format(task_id))
-        print('Complete tasks with id: ' + task_id)
 
         return requests.post(uri, json={
             'completed': True
@@ -116,5 +106,4 @@ class Rest_Util:
                                 """
 
         uri = _url('/tasks/{0}'.format(task_id))
-        print('Delete tasks with id: ' + task_id)
         return requests.delete(uri)
