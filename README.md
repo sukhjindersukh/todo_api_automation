@@ -22,3 +22,19 @@
 
 #### View test report
 >Open `report.html` file to see test run details
+
+
+#### Tests delails  
+*Total tests:  8*
+---
+*Passing tests*
+> 1. Add a new task
+> 2. Get all tasks
+> 3. Get a single task with id
+> 4. Update a task
+> 5. Complete a task
+> 6. Delete a task
+
+*Failing tests*
+> 1. Add a blank task
+> 2. Add a task with wrong data
